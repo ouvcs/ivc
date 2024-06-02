@@ -160,6 +160,8 @@ header nav .logo {
   line-height: inherit;
   font-weight: 500;
   color: #fff;
+  width: 55px;
+  
 }
 header nav .logo:after {
   content: '';
