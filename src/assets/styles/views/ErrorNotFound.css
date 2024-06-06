@@ -1,0 +1,45 @@
+.error {
+    width: 100dvw;
+    height: 89dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3dvh 0dvw;
+}
+
+.error-code {
+    font-size: 8em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;  
+    opacity: 0;
+    transform: translateY(-5dvh);
+    animation: fadeIn 0.5s ease-out 0.5s forwards;
+}
+
+.error-message {
+    font-size: 2em;
+    opacity: 0;
+    transform: translateY(5dvh);
+    animation: fadeIn 0.5s ease-out 0.75s forwards;
+}
+
+.error-back {
+    color: var(--white);
+    background-color: var(--azure-A100);
+    border-radius: var(--border-radius-smaller);
+    text-decoration: none;
+    padding: 1.5dvh 1dvw;
+    transition: background-color 0.3s, border-radius 0.3s;
+    opacity: 0;
+    transform: translateY(5dvh);
+    animation: fadeIn 0.5s ease-out 1s forwards;
+
+    &:hover {
+        background-color: var(--azure-A400);
+        border-radius: var(--border-radius);
+    }
+}

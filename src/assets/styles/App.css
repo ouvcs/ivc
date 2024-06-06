@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa");
+@import url("https://db.onlinewebfonts.com/c/5795a47e252d16c82bb79fa354b224db?family=VK+Sans+Display+Regular");
+
+:root {
+    --gray-020: #f9f9f9;
+    --gray-040: #f2f3f5;
+    --gray-050: #ebedf0;
+    --gray-100: #e1e3e6;
+    --gray-200: #c4c8cc;
+    --gray-300: #aaaeb3;
+    --gray-400: #909499;
+    --gray-450: #7f8285;
+    --gray-500: #76787a;
+    --gray-600: #5d5f61;
+    --gray-700: #454647;
+    --gray-750: #363738;
+    --gray-800: #2c2d2e;
+    --gray-850: #232324;
+    --gray-900: #19191a;
+    --gray-950: #141414;
+    --gray-1000: #0a0a0a;
+
+    --gray-A040: #f5f5f5;
+    --gray-A150: #d7d8d9;
+    --gray-A970: #070708;
+
+    --gray-alpha: #d7dbe0b3;
+    --charcoal: #384452;
+
+    --clear: #00000000;
+    
+    --steel-gray-150: #b8c1cc;
+    --steel-gray-200: #aeb7c2;
+    --steel-gray-250: #a3adb8;
+    --steel-gray-300: #99a2ad;
+    --steel-gray-350: #9099a3;
+    --steel-gray-400: #818c99;
+    --steel-gray-500: #6d7885;
+    
+    --black: #000000;
+
+    --black-alpha-5: #0000000d;
+    --black-alpha-6: #0000000f;
+    --black-alpha-8: #00000014;
+    --black-alpha-12: #0000001f;
+    --black-alpha-15: #00000026;
+    --black-alpha-16: #00000029;
+    --black-alpha-24: #0000003d;
+    --black-alpha-30: #0000004d;
+    --black-alpha-35: #00000059;
+    --black-alpha-60: #00000099;
+    --black-alpha-75: #000000bf;
+
+    --black-blue-10: #000c1a;
+    --black-blue-24: #001c3d;
+
+    --black-blue-24-alpha-8: #001c3d14;
+    --black-blue-24-alpha-24: #001c3d3d;
+    --black-blue-10-alpha-66: #0039731a;
+    --black-blue-66-alpha-10: #00244da8;
+    
+    --white: #ffffff;
+
+    --white-alpha-5: #ffffff0d;
+    --white-alpha-6: #ffffff0f;
+    --white-alpha-8: #ffffff14;
+    --white-alpha-12: #ffffff1f;
+    --white-alpha-15: #ffffff26;
+    --white-alpha-16: #ffffff29;
+    --white-alpha-24: #ffffff3d;
+    --white-alpha-30: #ffffff4d;
+    --white-alpha-35: #ffffff59;
+    --white-alpha-60: #ffffff99;
+    --white-alpha-75: #ffffffbf;
+
+    --white-blue-20: #cce4ff;
+    --white-blue-32: #add3ff;
+
+    --azure-100-muted: #67a5eb;
+    --azure-300: #3e89e0;
+    --azure-350: #2875cc;
+    --azure-A100: #2787f5;
+    --azure-A400: #4986cc;
+
+    --blue-200: #5c9ce6;
+    --blue-200-muted: #74a2d6;
+    --blue-300: #528bcc;
+    --blue-400: #5181b8;
+    --blue-600: #45678f;
+    --blue-A300: #4772a6;
+    --blue-A400: #346cad;
+    --blue-A500: #3c6a9e;
+    --blue-A800: #28436e;
+    --blue-facebook: #4367a3;
+    --blue-overlight-1-aplha-32: #add3ff52;
+    --blue-overlight-2-aplha-80: #c2deffcc;
+    --blue-overlight-3: #92b2d6;
+
+    --sky: #71aaeb;
+    --turquoise: #63b9ba;
+    --green: #4bb34b;
+    --emerald: #4cd964;
+
+    --violet: #792ec0;
+    --violet-dark: #1f1b2c;
+    --violet-light: #a393f5;
+    --violet-muted: #4b4d61;
+    
+    --orange: #ffa000;
+    --orange-fire: #f05c44;
+    --pink: #e6457a;
+    --pink-light: #faebeb;
+    --red: #e64646;
+    --red-dark: #522e2e;
+    --red-error: #eb4250;
+    --red-light: #ff5c5c;
+    --red-nice: #ff3347;
+    --yellow: #ffc107;
+    --yellow-light: #ffd54f;
+    --yellow-sunflower: #fece00;
+
+    --gold-200: #f4e7c3;
+    --gold-250: #e3d3ac;
+    --gold-300: #d1c097;
+    --gold-400: #ab9871;
+    --gold-500: #857250;
+    --brown-light: #c2b79f;
+    --brown-gold: #9e8f72;
+
+    --lavander-100: #e6e9ff;
+    --lavander-200: #ccd3ff;
+    --lavander-300: #adb8ff;
+    --lavander-700: #5965b3;
+    --lavander-800: #404980;
+    --lavander-900: #262b4d;
+}
+
+:root {
+    --font-family: Comfortaa, sans-serif;
+    --font-family-second: Montserrat, sans-serif;
+
+    --border-radius: 3dvh;
+    --border-radius-bigger: 6dvh;
+    --border-radius-smaller: 1dvh;
+}
+
+body {
+    font-family: var(--font-family);
+    padding: 0;
+    margin: 0;
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
