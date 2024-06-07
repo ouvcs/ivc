@@ -1,0 +1,146 @@
+header {
+    width: 100dvw;
+    height: 11dvh;
+}
+
+.navigation {
+    width: 100dvw;
+    height: 11dvh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--gray-200);
+    font-family: var(--font-family-second);
+}
+
+.menu-logo {
+    height: 8.75dvh;
+    width: 15dvw;
+    padding: 0dvh 2dvw;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5dvw;
+    flex-grow: 1;
+}
+
+.menu-item {
+    color: var(--gray-800);
+    text-decoration: none;
+    transition: opacity 0.3s ease, border-bottom-color 0.3s ease;
+    border-bottom: 1px solid var(--clear);
+    font-size: 1.1em;
+    white-space: nowrap;
+}
+
+.menu-item:hover {
+    opacity: 1;
+    border-bottom-color: var(--gray-800);
+}
+
+.menu-vk {
+    margin-left: auto;
+    margin-right: 2dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: 0px;
+}
+
+.vk-logo {
+    width: 5dvh;
+    height: 5dvh;
+    transition: width 1s;
+    z-index: 1;
+}
+
+.vk-text, .vk-text-mask {
+    font-family: "VK Sans Display Regular";
+    font-size: 1.2em;
+    font-weight: bold;
+    vertical-align: middle;
+    overflow: hidden;
+    color: var(--clear);
+    transform: translateY(-2px) translateX(100%);
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+.menu-vk:hover .vk-text {
+    color: var(--white);
+    transform: translateY(-2px) translateX(-10%);
+}
+
+.navigation-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-vk {
+        display: none;
+    }
+
+    .menu-items {
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2dvh;
+        padding: 5dvh 5dvw;
+        background-color: var(--gray-200);
+        top: 10dvh;
+        width: 90dvw;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all 0.7s ease;
+    }
+
+    .navigation.open .menu-items {
+        transform: scaleY(1);
+    }
+
+    .menu-item {
+        text-align: right;
+        width: 100%;
+        border-bottom: 0px;
+        transition: all 0.5s ease;
+    }
+
+    .menu-item:active {
+        transform: translateX(-5dvw);
+    }
+    
+    .navigation-toggle {
+        display: flex;
+        margin-left: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6dvh;
+        width: 3.8dvh;
+        aspect-ratio: 1 / 0.8;
+        margin-right: 5dvw;
+    }
+
+    .navigation-toggle span {
+        height: 0.4dvh;
+        width: 3.8dvh;
+        background: var(--gray-800);
+        border-radius: var(--border-radius-smaller);
+        transition: all 0.3s ease;
+    }
+
+    .navigation.open .navigation-toggle span:nth-child(1) {
+        transform: rotate(45deg) translateY(1.4dvh);
+    }
+
+    .navigation.open .navigation-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navigation.open .navigation-toggle span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-1.4dvh);
+    }
+}
