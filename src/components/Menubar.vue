@@ -21,4 +21,4 @@
 </template>
 
 <script src="@/assets/scripts/components/Menubar.js"></script>
-<style scoped src="@/assets/styles/components/Menubar.css"></style>
+<style src="@/assets/styles/components/Menubar.css"></style>
