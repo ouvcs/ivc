@@ -1,6 +1,5 @@
 <template>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <div id="map"></div>
+    TheMap.vue
 </template>
 
 <script src="@/assets/scripts/views/TheMap.js"></script>
